@@ -1,4 +1,4 @@
-# Manage personal items related to the vim text editor. This could include
+# Manage personal items related to the vim text editor
 
 ## Configurations
 - .vimrc file
