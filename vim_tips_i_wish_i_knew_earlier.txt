@@ -1,3 +1,28 @@
+Tips I wish I knew earlier:
+- Mapping Esc to Caps Lock: localectl set-x11-keymap us '' '' caps:escape
+- :norm (invoke normal mode from command mode)
+  - Example 1 (appends to end of selected lines):
+    - Shift + v
+    - :norm A text to add to end of selected lines
+- C-v for vertical visual mode
+  - Example 1 (increments first number across selected lines):
+    - Shift + v
+    - g[Ctrl]a
+  - Example 2 (increments first number across selected lines):
+    - Ctrl + v
+    - g[Ctrl]a
+- o for switching selection direction
+  - allows for modifying text selected with visual mode
+-Invoking scripts/commands
+  - Example 1 (sorts selected text and removes dupes):
+    - Shift + v
+    - :! sort | uniq
+  - Example 2 (converts selected texted into json format):
+    - Shift + v
+    - ! jq . 
+
+
+
 this is great
 
 hello swedish
@@ -8,7 +33,11 @@ hello swedish
 ;asdf goodbye swedish;
 asdf goodbye swedish
 
-list.get(0);
+list.get(1);
+list.get(2);
+list.get(3);
+list.get(4);
+list.get(5);
 list.get(1);
 list.get(2);
 list.get(3);
